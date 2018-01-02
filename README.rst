@@ -64,6 +64,7 @@ This assumes you've installed Python module "virtualenv" which steps depend upon
 ::
 
   virtualenv --python=python2.7 ./venv
+  ./venv/bin/pip install --upgrade setuptools
   ./venv/bin/pip install tahoe-lafs
   source ./venv/bin/activate
   tahoe create-client --introducer=<furl> --shares-needed=1 --shares-happy=1 --shares-total=2
