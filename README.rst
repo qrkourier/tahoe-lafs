@@ -1,4 +1,4 @@
-==========
+
 Tahoe-LAFS
 ==========
 
@@ -56,7 +56,18 @@ For more detailed instructions, read `<docs/INSTALL.rst>`_ .
 Once ``tahoe --version`` works, see `<docs/running.rst>`_ to learn how to set
 up your first Tahoe-LAFS node.
 
-LICENCE
+QUICK START
+===========
+
+::
+
+  virtualenv --python=python2.7 ./venv
+  ./venv/bin/pip install tahoe-lafs
+  source ./venv/bin/activate
+  tahoe create-client --introducer=<furl> --shares-needed=1 --shares-happy=1 --shares-total=2
+
+
+LICENSE
 =======
 
 Copyright 2006-2016 The Tahoe-LAFS Software Foundation
