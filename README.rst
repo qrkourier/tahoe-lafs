@@ -59,6 +59,8 @@ up your first Tahoe-LAFS node.
 QUICK START
 ===========
 
+This assumes you've installed Python module "virtualenv" which steps depend upon which OS you're using and whether you have Python environment isolation of some variety. You can probably install it like ``sudo <package manager> install python-virtualenv`` or ``pip install virtualenv`` or, failing that, ``sudo !!``
+
 ::
 
   virtualenv --python=python2.7 ./venv
